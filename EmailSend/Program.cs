@@ -16,15 +16,15 @@ namespace EmailSend
             MailMessage mail = new MailMessage();
             SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com"); 
 
-            mail.From = new MailAddress("vishnukumarps2017@gmail.com"); // From
+            mail.From = new MailAddress("FromEmail@gamil.com"); // From
 
-            mail.To.Add("vishnuvis0016@gmail.com");// To
+            mail.To.Add("Toemail@gmail.com");// To
             mail.Subject = "OTP ";
             mail.Body = "YOUR OTP="+ OTP;
 
 
             SmtpServer.Port = 587;
-            SmtpServer.Credentials = new System.Net.NetworkCredential("vishnukumarps2017@gmail.com", "vISHNU@123");
+            SmtpServer.Credentials = new System.Net.NetworkCredential("FromEmail@gamil.com", "emailPassword");
             SmtpServer.EnableSsl = true;
 
             SmtpServer.Send(mail);
