@@ -4,9 +4,10 @@ using System.Net.Mail;
 
 namespace EmailSend
 {
-    class Program
+
+    class EmailSend
     {
-        static void Main(string[] args)
+        public void SendEmail(string toAddress,string msg,string subject)
         {
             Random rn = new Random();
             int otp = rn.Next(1000);
@@ -14,23 +15,44 @@ namespace EmailSend
 
 
             MailMessage mail = new MailMessage();
-            SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com"); 
+            SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
 
-            mail.From = new MailAddress("FromEmail@gamil.com"); // From
+            mail.From = new MailAddress("vishnukumarps2017@gmail.com"); // From
 
-            mail.To.Add("Toemail@gmail.com");// To
-            mail.Subject = "OTP ";
-            mail.Body = "YOUR OTP="+ OTP;
+            mail.To.Add(toAddress);// To
+            mail.Subject =subject;
+            mail.Body = msg;
 
 
             SmtpServer.Port = 587;
-            SmtpServer.Credentials = new System.Net.NetworkCredential("FromEmail@gamil.com", "emailPassword");
+            SmtpServer.Credentials = new System.Net.NetworkCredential("vishnukumarps2017@gmail.com", "vISHNU@123");
             SmtpServer.EnableSsl = true;
 
             SmtpServer.Send(mail);
+        }
+    }
 
 
-            Console.WriteLine("Send"+OTP);
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("Enter Email");
+            string To = Console.ReadLine();
+            Console.WriteLine("Enter Sub");
+            string sub = Console.ReadLine();
+            Console.WriteLine("Enter msg");
+            string msg = Console.ReadLine();
+
+            EmailSend ob = new EmailSend();
+            ob.SendEmail(To,msg,sub);
+
+
+
+            Console.WriteLine("Done");
+
             Console.ReadLine();
         }
     }
