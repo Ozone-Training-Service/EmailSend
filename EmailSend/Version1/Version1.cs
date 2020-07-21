@@ -6,5 +6,6 @@ namespace EmailSend.Version1
 {
     class Version1
     {
+     
     }
 }
