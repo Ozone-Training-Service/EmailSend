@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EmailSend.Version1;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -47,32 +48,38 @@ namespace EmailSend
 
 
 
-            int[,] b = new int[2, 2];
-            b[0, 0] = 10;
+            //int[,] b = new int[2, 2];
+            //b[0, 0] = 10;
 
-            Console.WriteLine("Enter a 2X2 matrix");
-            for (int i = 0; i < 2; i++)
-            {
-                for (int j = 0; j < 2; j++)
-                {
-                    b[i, j] = Convert.ToInt32(Console.ReadLine());
-                }
-            }
-            Console.WriteLine("Tanspose");
+            //Console.WriteLine("Enter a 2X2 matrix");
+            //for (int i = 0; i < 2; i++)
+            //{
+            //    for (int j = 0; j < 2; j++)
+            //    {
+            //        b[i, j] = Convert.ToInt32(Console.ReadLine());
+            //    }
+            //}
+            //Console.WriteLine("Tanspose");
 
-            for (int i = 0; i < 2; i++)
-            {
-                for (int j = 0; j < 2; j++)
-                {
+            //for (int i = 0; i < 2; i++)
+            //{
+            //    for (int j = 0; j < 2; j++)
+            //    {
 
-                    Console.Write(b[j, i] + "  ");// transpose
-                    
-                    //Console.Write(b[i,j]+"  ");
-                }
+            //        Console.Write(b[j, i] + "  ");// transpose
 
-                Console.WriteLine("\n");
-            }
+            //        //Console.Write(b[i,j]+"  ");
+            //    }
 
+            //    Console.WriteLine("\n");
+            //}
+
+
+
+            Matrixadd ob = new Matrixadd();
+            ob.MatrixOpertions();
+
+            Console.ReadLine();
 
 
 

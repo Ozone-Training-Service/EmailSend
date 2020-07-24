@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <StartupObject>EmailSend.Version1.array_search</StartupObject>
+    <StartupObject>EmailSend.Array</StartupObject>
   </PropertyGroup>
 
 </Project>
