@@ -6,4 +6,8 @@
     <StartupObject>EmailSend.Array</StartupObject>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Logs\" />
+  </ItemGroup>
+
 </Project>
