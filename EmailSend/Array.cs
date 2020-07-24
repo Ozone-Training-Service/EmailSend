@@ -1,0 +1,57 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace EmailSend
+{
+    class Array
+    {
+
+        static void Main(string[] args)
+        {
+            int[] a = new int[10];
+
+            a[0] = 10;
+            a[9] = 22;
+
+            Console.WriteLine("Enter Array Elments");
+            for (int i = 0; i < a.Length; i++)
+            {
+                a[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+
+            Console.WriteLine("output");
+
+            //            9>=0
+
+            for (int i=0;i<=5;i++)
+            {
+                Console.WriteLine(a[i]);
+            }
+
+            // foreach
+            // array print
+            //Collection
+            //speed
+
+            Console.WriteLine("output");
+
+            foreach (var item in a)
+            {
+               
+                Console.WriteLine(item);
+            }
+
+
+
+
+
+
+
+
+
+            Console.ReadKey();
+        }
+    }
+}
