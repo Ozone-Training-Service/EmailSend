@@ -1,0 +1,1 @@
+errorAttempted to divide by zero.Date:24-07-2020errorAttempted to divide by zero.

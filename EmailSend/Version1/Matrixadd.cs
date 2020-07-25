@@ -4,10 +4,10 @@ using System.Text;
 
 namespace EmailSend.Version1
 {
-    class Matrixadd
+    public class Matrixadd
     {
 
-        static void Main(string[] args)
+        public void MatrixOpertions()
         {
             int[,] a = new int[2, 2];
             int[,] b = new int[2, 2];
@@ -37,12 +37,15 @@ namespace EmailSend.Version1
                 }
             }
             //result
+
+            Console.WriteLine("\n\n\n\t\toutput");
             for (int i = 0; i < 2; i++)
             {
                 for (int j = 0; j < 2; j++)
                 {
-                    Console.WriteLine(c[i, j] + "  ");
+                    Console.Write(c[i, j] + "  ");
                 }
+                Console.WriteLine("\n");
             }
         }
     }
