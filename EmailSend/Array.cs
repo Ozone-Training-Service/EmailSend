@@ -78,15 +78,16 @@ namespace EmailSend
 
             //Matrixadd ob = new Matrixadd();
             //ob.MatrixOpertions();
-            ExceptionHandling ob = new ExceptionHandling();
-            ob.doExceptionHandling();
+            //ExceptionHandling ob = new ExceptionHandling();
+            //ob.doExceptionHandling();
 
 
-            Console.ReadLine();
+            //Console.ReadLine();
 
 
 
-
+            Collections ob = new Collections();
+            ob.Show();
 
 
 
